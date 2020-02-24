@@ -1,0 +1,54 @@
+ul {
+    margin-top: .4em;
+    font-size: 1.14em;
+}
+
+li {
+    padding-left: .45em;
+}
+
+h1, h2, h3 {
+    font-style: oblique;
+}
+
+h1 {
+    letter-spacing: .18em!important;
+    text-align: center;
+}
+
+h2 {
+    letter-spacing: .24em;
+}
+
+@media screen and (min-width: 800px) {
+
+    .css-1habeid-Projects {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 799px) {
+
+    .css-1habeid-Projects {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(1,1fr)!important;
+    }
+}
+
+
+footer {
+    position: absolute!important;
+    bottom: 50px!important;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+    align-content: center;
+    text-align: center;
+}
+
+
+.copy-text {
+    font-size: 1.25em;
+    font-weight: bold;
+}
