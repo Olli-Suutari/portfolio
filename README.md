@@ -1,16 +1,13 @@
 <h1 align="center">
   Olli Suutari - Portfolio
 </h1>
+<h2 align="center">
+  <a href="https://olli-suutari.fi/">olli-suutari.fi</a>
+</h2>
 
+ <br />
 
-
-**Welcome!**
-
-To visit this website, go to: [olli-suutari.fi](https://olli-suutari.fi/)
-
-
-
-TO DO:**
+<h3>TO DO:</h3>
 
 - Verify accessibility features
 
@@ -22,17 +19,16 @@ TO DO:**
 
 - Add noscript functionality
 
-  
-
-
-
-## ✨ Features
+ <br />
+<h3>✨ Features </h3>
 
 - Theme UI-based theming
 - react-spring parallax effect
 - CSS Animations on Shapes
 
+ <br />
 
-
-This website is based on "[Gatsby Starter Portfolio: Cara](https://github.com/LekoArts/gatsby-starter-portfolio-cara)" by LekoArts.
+<h4>
+This website is based on "<a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Gatsby Starter Portfolio: Cara</a>" by LekoArts.
+</h4>
 
