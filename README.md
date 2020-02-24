@@ -28,5 +28,7 @@
 
  <br />
 
-<h4>This website is based on "[Gatsby Starter Portfolio: Cara](https://github.com/LekoArts/gatsby-starter-portfolio-cara)" by LekoArts.</h4>
+<h4>
+This website is based on "<a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Gatsby Starter Portfolio: Cara</a>" by LekoArts.
+</h4>
 
