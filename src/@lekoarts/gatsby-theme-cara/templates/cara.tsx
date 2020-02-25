@@ -74,8 +74,8 @@ function calculateOffset() {
       <Parallax pages={5.6 + offsetMobile}>
         <Hero offset={0} />
         <Projects offset={1 + offsetProjects} />
-        <About offset={2.7 + offSetAbout } />
-        <Contact offset={3.5  + offSetContact } />
+        <About offset={2.3 + offSetAbout } />
+        <Contact offset={3.3  + offSetContact } />
       </Parallax>
     </Layout>
   )

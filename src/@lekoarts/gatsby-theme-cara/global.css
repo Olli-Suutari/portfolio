@@ -21,17 +21,21 @@ h2 {
 }
 
 @media screen and (min-width: 800px) {
-    .css-1habeid-Projects {
+    .project-card-list { 
         grid-gap: 2rem;
         grid-template-columns: repeat(2,1fr);
     }
 }
 
 @media screen and (max-width: 799px) {
-    .css-1habeid-Projects {
+    .project-card-list { 
         grid-gap: 2rem;
         grid-template-columns: repeat(1,1fr)!important;
     }
+}
+
+
+@media screen and (max-width: 600px) {
 
     ul {
         font-size: 1em;
@@ -40,7 +44,6 @@ h2 {
         padding-left: .25em;
     }
 }
-
 
 footer {
     position: absolute!important;

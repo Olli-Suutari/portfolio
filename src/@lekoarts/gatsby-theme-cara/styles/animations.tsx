@@ -3,13 +3,13 @@ import styled from "@emotion/styled"
 
 const wave = keyframes`
   0% {
-    d: path("M 0 100 Q 250 50 400 200 Q 550 350 800 300 L 800 0 L 0 0 L 0 100 Z");
+    d: path("M 0 100 Q 225 100 400 200 Q 575 300 800 300 L 800 0 L 0 0 L 0 100 Z");
   }
   50% {
     d: path("M 0 100 Q 200 150 400 200 Q 600 250 800 300 L 800 0 L 0 0 L 0 100 Z");
   }
   100% {
-    d: path("M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z");
+    d: path("M 0 100 Q 175 250 400 200 Q 625 150 800 300 L 800 0 L 0 0 L 0 100 Z");
   }
 `
 
@@ -32,11 +32,11 @@ const upDownWide = keyframes`
 `
 
 const upDownAnimation = css`
-  ${upDown} 4s ease-in-out infinite alternate;
+  ${upDown} 85s infinite alternate;
 `
 
 const upDownWideAnimation = css`
-  ${upDownWide} 18s ease-in-out infinite alternate;
+  ${upDownWide} 90s infinite alternate;
 `
 
 export const UpDown = styled.div`
