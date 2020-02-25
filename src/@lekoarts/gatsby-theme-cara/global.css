@@ -1,5 +1,5 @@
 ul {
-    margin-top: .4em;
+    margin-top: .75em;
     font-size: 1.14em;
 }
 
@@ -32,10 +32,13 @@ h2 {
         grid-gap: 2rem;
         grid-template-columns: repeat(1,1fr)!important;
     }
-}
 
-
-.project-card {
+    ul {
+        font-size: 1em;
+    }
+    li {
+        padding-left: .25em;
+    }
 }
 
 

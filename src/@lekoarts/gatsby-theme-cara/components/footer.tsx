@@ -1,13 +1,26 @@
 /** @jsx jsx */
 import { Footer as ThemeFooter, Styled, Flex, useColorMode, jsx } from "theme-ui"
 
+let intitialColorModeSet = false;
 const Footer = () => {
   const [colorMode, setColorMode] = useColorMode()
-  const isDark = colorMode === `dark`
+  let isDark = colorMode === `dark`
   const toggleColorMode = (e: any) => {
     setColorMode(isDark ? `light` : `dark`)
   }
 
+  // Detect the preferred color mode.
+  if (typeof window !== 'undefined' && !intitialColorModeSet) {
+        // Detect preferred mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          setColorMode(`light`);
+        }
+        /* // We use dark mode by default
+        else {
+          //setColorMode(`dark`);
+        }*/
+        intitialColorModeSet = true;
+  }
 
   return (
     <ThemeFooter>

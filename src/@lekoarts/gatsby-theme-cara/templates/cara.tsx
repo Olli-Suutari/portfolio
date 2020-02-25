@@ -6,15 +6,6 @@ import Projects from "../components/projects"
 import About from "../components/about"
 import Contact from "../components/contact"
 
-
-  /* Theme's default off-sets
-      <Parallax pages={5}>
-        <Hero offset={0} />
-        <Projects offset={1} />
-        <About offset={3} />
-        <Contact offset={4} />
-      </Parallax>
-  */
  let Cara = () => (
   <Layout>
     <Parallax pages={5.6}>
@@ -34,6 +25,63 @@ let offSetAbout = 0;
 let offSetContact = 0;
 let projectCollumns = 2;
 
+function calculateOffset() {
+  windowHeight = window.innerHeight;
+  windowWidth = window.innerWidth;
+  if (windowWidth < 800) {
+    projectCollumns = 1;
+  }
+  if (projectCollumns === 1) {
+    offsetMobile = 2;
+    offsetProjects = 1.5;
+    offSetAbout = .85;
+    if (windowHeight < 600) {
+      offsetProjects = offsetProjects + .75;
+      offSetAbout = offSetAbout + 1.35;
+      offSetContact = offSetContact -.35;
+    }
+
+    else if (windowHeight < 800) {
+      offsetProjects = offsetProjects;
+      offSetAbout = offSetAbout + .95;
+      offSetContact = offSetContact -.35;
+    }
+    else if (windowHeight < 1000) {
+      offsetProjects = offsetProjects + .15;
+      offSetAbout = offSetAbout + .65
+      offSetContact = offSetContact -.35;
+    }
+  }
+  else {
+    if (windowHeight < 600) {
+      offsetProjects = offsetProjects + .75;
+      offSetAbout = offSetAbout + 1.35;
+    }
+    else if (windowHeight < 800) {
+      offsetProjects = offsetProjects;
+      offSetAbout = offSetAbout + .95;
+    }
+    else if (windowHeight < 1000) {
+      offsetProjects = offsetProjects + .15;
+      offSetAbout = offSetAbout + .65
+    }
+  }
+  offSetAbout = offSetAbout + offsetProjects;
+  offSetContact = offSetContact + offSetAbout + offsetProjects;
+  offsetMobile = offSetContact;
+  Cara = () => (
+    <Layout>
+      <Parallax pages={5.6 + offsetMobile}>
+        <Hero offset={0} />
+        <Projects offset={1 + offsetProjects} />
+        <About offset={2.7 + offSetAbout } />
+        <Contact offset={3.5  + offSetContact } />
+      </Parallax>
+    </Layout>
+  )
+}
+
+
 // If we try to use window during the build process, the build fails.
 if (typeof window !== 'undefined') {
       // https://jsfiddle.net/alvaroAV/svvz7tkn/
@@ -47,74 +95,11 @@ if (typeof window !== 'undefined') {
     if (windowWidth < 800) {
       projectCollumns = 1;
     }
-
+    // Initial calculateOffset + on resize
     calculateOffset();
-
-  // Re-set the offsets when resizing the window.
-  window.addEventListener('resize', function() {
-    calculateOffset();
-  });}
-
-
-  function calculateOffset() {
-    windowHeight = window.innerHeight;
-    windowWidth = window.innerWidth;
-    if (windowWidth < 800) {
-      projectCollumns = 1;
-    }
-    if (projectCollumns === 1) {
-      offsetMobile = 2;
-      offsetProjects = 1.5;
-      offSetAbout = .85;
-    
-      if (windowHeight < 600) {
-        offsetProjects = offsetProjects + .75;
-        offSetAbout = offSetAbout + 1.35;
-        offSetContact = offSetContact -.35;
-    
-      }
-    
-      else if (windowHeight < 800) {
-        offsetProjects = offsetProjects;
-        offSetAbout = offSetAbout + .95;
-        offSetContact = offSetContact -.35;
-      }
-      else if (windowHeight < 1000) {
-        offsetProjects = offsetProjects + .15;
-        offSetAbout = offSetAbout + .65
-        offSetContact = offSetContact -.35;
-      }
-    }
-    else {
-      if (windowHeight < 600) {
-        offsetProjects = offsetProjects + .75;
-        offSetAbout = offSetAbout + 1.35;
-      }
-    
-      else if (windowHeight < 800) {
-        offsetProjects = offsetProjects;
-        offSetAbout = offSetAbout + .95;
-      }
-      else if (windowHeight < 1000) {
-        offsetProjects = offsetProjects + .15;
-        offSetAbout = offSetAbout + .65
-      }
-    }
-    offSetAbout = offSetAbout + offsetProjects;
-    offSetContact = offSetContact + offSetAbout + offsetProjects;
-    offsetMobile = offSetContact;
-    Cara = () => (
-      <Layout>
-        <Parallax pages={5.6 + offsetMobile}>
-          <Hero offset={0} />
-          <Projects offset={1 + offsetProjects} />
-          <About offset={2.7 + offSetAbout } />
-          <Contact offset={3.5  + offSetContact } />
-        </Parallax>
-      </Layout>
-    )
-  
-  }
-
+    window.addEventListener('resize', function() {
+      calculateOffset();
+    });
+}
 
 export default Cara
