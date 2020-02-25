@@ -11,7 +11,7 @@ export default {
     text: tailwind.colors.gray[3],
     heading: tailwind.colors.white,
     background: `#141821`,
-    divider: tailwind.colors.gray[8],
+    divider: tailwind.colors.gray[7],
     textMuted: tailwind.colors.gray[5],
     icon_brightest: tailwind.colors.white,
     icon_darker: tailwind.colors.gray[7],

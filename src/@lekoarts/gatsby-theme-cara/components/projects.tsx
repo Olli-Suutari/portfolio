@@ -27,8 +27,8 @@ const Projects = ({ offset }: { offset: number }) => (
             gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
             h2: { gridColumn: `-1/1` },
             h: { color: `#fdfdfd` },
-            h3: { color: '#1a202c' },
-            p: { color: '#1a202c' },
+            //h3: { color: '#1a202c' },
+            //p: { color: '#1a202c' },
           }}
         >
           <ProjectsMDX />

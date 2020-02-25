@@ -21,7 +21,6 @@ h2 {
 }
 
 @media screen and (min-width: 800px) {
-
     .css-1habeid-Projects {
         grid-gap: 2rem;
         grid-template-columns: repeat(2,1fr);
@@ -29,11 +28,14 @@ h2 {
 }
 
 @media screen and (max-width: 799px) {
-
     .css-1habeid-Projects {
         grid-gap: 2rem;
         grid-template-columns: repeat(1,1fr)!important;
     }
+}
+
+
+.project-card {
 }
 
 
