@@ -7,7 +7,16 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
+
+
+    siteTitle: `Olli Suutari – portfolio`,
     siteTitleAlt: `Olli Suutari – Full-stack passion for a better web`,
+    siteHeadline: `Olli Suutari – Full-stack passion for a better web`,
+    siteUrl: `https://olli-suutari.fi/`,
+    siteDescription: `Welcome to the portfolio of Olli Suutari`,
+    siteLanguage: `en`,
+    siteImage: `/banner.jpg`,
+    author: `Olli Suutari`,
   },
   plugins: [
     {
