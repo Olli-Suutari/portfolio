@@ -71,11 +71,11 @@ function calculateOffset() {
   offsetMobile = offSetContact;
   Cara = () => (
     <Layout>
-      <Parallax pages={5.6 + offsetMobile}>
+      <Parallax pages={6.2 + offsetMobile}>
         <Hero offset={0} />
-        <Projects offset={1 + offsetProjects} />
-        <About offset={2.3 + offSetAbout } />
-        <Contact offset={3.3  + offSetContact } />
+        <Projects offset={1.05 + offsetProjects} />
+        <About offset={2.35 + offSetAbout } />
+        <Contact offset={3.66  + offSetContact } />
       </Parallax>
     </Layout>
   )

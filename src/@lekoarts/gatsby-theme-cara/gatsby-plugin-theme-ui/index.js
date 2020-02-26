@@ -40,7 +40,7 @@ export default {
       },
     },
   },
-  breakpoints: [`400px`, `600px`, `900px`, `1200px`, `1600px`],
+  breakpoints: [`400px`, `800px`, `900px`, `1200px`, `1600px`],
   sizes: {
     ...tailwind.sizes,
     "1/2": `50%`,

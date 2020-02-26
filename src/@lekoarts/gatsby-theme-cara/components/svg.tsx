@@ -86,6 +86,7 @@ const defaultProps = {
 
 const SVG = ({ stroke, color, width, icon, left, top, hiddenMobile }: SVGProps) => (
   <svg
+    className={hiddenMobile ? 'hidden-mobile-icon' : ``}
     sx={{
       position: `absolute`,
       stroke: stroke ? `currentColor` : `none`,

@@ -11,7 +11,7 @@ import ProjectsMDX from "../sections/projects"
 const Projects = ({ offset }: { offset: number }) => (
   <div>
 
-    <Divider bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)" clipPath="polygon(0 3%, 100% 5%, 100% 84%, 0 88%)" speed={0.05} offset={1.1} factor={6.5} />
+    <Divider bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)" clipPath="polygon(0 3%, 100% 5%, 100% 84%, 0 88%)" speed={0.05} offset={1.1} factor={7.2} />
 
     <Content speed={0.4} offset={offset + 0.2} factor={2}>
       <Inner>
