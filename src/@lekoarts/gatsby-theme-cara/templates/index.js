@@ -1,11 +1,7 @@
 import { tailwind } from "@theme-ui/presets"
-//import "baseTheme" from "@lekoarts/gatsby-theme-cara/src/gatsby-plugin-theme-ui"
-import baseTheme from "@lekoarts/gatsby-theme-cara/src/gatsby-plugin-theme-ui"
-import merge from "lodash.merge"
 
-console.log("FOO BAR")
 
-export default merge({}, baseTheme, {
+export default {
 
 
   ...tailwind,
@@ -18,7 +14,7 @@ export default merge({}, baseTheme, {
     text: tailwind.colors.gray[3],
     heading: tailwind.colors.white,
     background: `hotpink`,
-    divider: 'hotpink',
+    divider: tailwind.colors.gray[7],
     textMuted: tailwind.colors.gray[5],
     icon_brighter: 'hotpink',
     icon_brightest: tailwind.colors.white,

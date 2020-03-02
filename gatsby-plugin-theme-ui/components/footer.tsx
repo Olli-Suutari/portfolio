@@ -21,9 +21,10 @@ const Footer = () => {
         }*/
         intitialColorModeSet = true;
   }
+  let footerBG = 'hotpink';
 
   return (
-    <ThemeFooter className="bottom-footer" sx={{ paddingTop: '60px', zInex: 9999999999, width: '100vmin' }} >
+    <ThemeFooter className="bottom-footer" sx={{ background: `footerBG`, width: '100vmin' }} >
       <button
         sx={{ variant: `buttons.toggle`, fontWeight: `bold`, display: `block`, mx: `auto`, padding: '1em 2.5em', borderRadius: '14px', fontSize: '1.07em', mb: 3 }}
         onClick={toggleColorMode}

@@ -10,7 +10,7 @@ import Intro from "../sections/intro"
 
 const Hero = ({ offset }: { offset: number }) => (
   <div>
-    <Divider bg="background" speed={0.2} offset={offset} factor={2}>
+    <Divider speed={0.2} offset={offset}>
       <UpDown>
         <SVG icon="box" width={6} color="icon_darker" left="60%" top="15%" />
       </UpDown>

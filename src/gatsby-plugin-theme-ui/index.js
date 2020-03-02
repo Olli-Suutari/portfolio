@@ -1,15 +1,9 @@
 import { tailwind } from "@theme-ui/presets"
-//import "baseTheme" from "@lekoarts/gatsby-theme-cara/src/gatsby-plugin-theme-ui"
-import baseTheme from "@lekoarts/gatsby-theme-cara/src/gatsby-plugin-theme-ui"
-import merge from "lodash.merge"
-
-console.log("FOO BAR")
-
-export default merge({}, baseTheme, {
 
 
+export default {
   ...tailwind,
-  initialColorMode: 'dark',
+  initialColorMode: `dark`,
   useCustomProperties: true,
   colors: {
     ...tailwind.colors,
@@ -17,10 +11,9 @@ export default merge({}, baseTheme, {
     secondary: tailwind.colors.indigo[6],
     text: tailwind.colors.gray[3],
     heading: tailwind.colors.white,
-    background: `hotpink`,
-    divider: 'hotpink',
+    background: tailwind.colors.gray[8],
+    divider: tailwind.colors.gray[7],
     textMuted: tailwind.colors.gray[5],
-    icon_brighter: 'hotpink',
     icon_brightest: tailwind.colors.white,
     icon_darker: tailwind.colors.gray[7],
     icon_darkest: tailwind.colors.gray[8],
@@ -31,18 +24,27 @@ export default merge({}, baseTheme, {
     icon_pink: tailwind.colors.pink[5],
     icon_purple: tailwind.colors.purple[6],
     icon_green: tailwind.colors.green[5],
+    projectsBg: tailwind.colors.purple[6],
+    projectCardBg: tailwind.colors.gray[7],
+    aboutBg: tailwind.colors.indigo[6],
+    contactBg: tailwind.colors.blue[7],
+    footerBg: tailwind.colors.orange[7],
     modes: {
       light: {
         text: tailwind.colors.gray[8],
         heading: tailwind.colors.black,
-        primary: tailwind.colors.orange[7],
-        background: tailwind.colors.gray[1],
-        divider: tailwind.colors.gray[2],
+        primary: '#a86de3',
+        background: tailwind.colors.gray[2],
+        divider: tailwind.colors.gray[3],
         textMuted: tailwind.colors.gray[6],
-        icon_brighter: tailwind.colors.gray[6],
         icon_brightest: tailwind.colors.gray[2],
         icon_darker: tailwind.colors.gray[4],
         icon_darkest: tailwind.colors.gray[6],
+        projectsBg: tailwind.colors.yellow[2],
+        projectCardBg: tailwind.colors.teal[2],
+        aboutBg: tailwind.colors.indigo[3],
+        contactBg: tailwind.colors.blue[3],
+        footerBg: tailwind.colors.gray[3],
       },
     },
   },
