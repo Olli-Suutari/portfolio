@@ -23,12 +23,11 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
       borderRadius: `13px`,
       px: 4,
       py: [4, 5],
-      color: `white`,
-      backgroundColor: 'projectCardBg',
-      transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
+      color: `text_bright`,
+      backgroundColor: 'project_card_bg',
+      transition: `all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
       "&:hover": {
-        color: `white !important`,
-        transform: `translateY(-5px)`,
+        transform: `translateY(-12px)`,
         boxShadow: `xl`,
       },
     }}

@@ -23,14 +23,16 @@ const Footer = () => {
   }
 
   return (
-    <ThemeFooter className="bottom-footer" sx={{ paddingTop: '60px', zInex: 9999999999, width: '100vmin' }} >
+    <ThemeFooter className="bottom-footer" sx={{ color: 'text_bright', paddingTop: '60px', zInex: 9999999999, width: '100vmin' }} >
       <button
-        sx={{ variant: `buttons.toggle`, fontWeight: `bold`, display: `block`, mx: `auto`, padding: '1em 2.5em', borderRadius: '14px', fontSize: '1.07em', mb: 3 }}
+        sx={ {background: 'project_card_bg'} }
+        className={isDark ? 'btn-toggle-light' : 'btn-toggle-dark'}
         onClick={toggleColorMode}
         type="button"
         aria-label="Toggle dark mode"
       >
-        {isDark ? `Light` : `Dark`}
+        {isDark ? <span sx= { { fontStyle: 'oblique', color: 'text_bright', marginTop: '3px'} }><img className="dark-mode-icon" src="lightbult.svg" alt="" /> Light</span> : 
+        <span sx= { { fontStyle: 'oblique', color: 'text', marginTop: '3px'} }> <img className="light-mode-icon" src="lightbult.svg" alt="" /> Dark</span> }
       </button>
       <br />
       <span tabIndex={0} className="copy-text"> &copy; Olli Suutari</span>
@@ -40,9 +42,9 @@ const Footer = () => {
           justifyContent: `center`,
           alignItems: `center`,
           mt: 3,
-          color: `text`,
+          color: `heading_bright`,
           fontWeight: `semibold`,
-          a: { color: `text` },
+          a: { color: `heading_bright` },
         }}
       >
         {` `}
