@@ -12,9 +12,9 @@ h1, h2, h3 {
 }
 
 h1 {
-    letter-spacing: .1em!important;
+    letter-spacing: .085em!important;
     text-align: center;
-    font-size: 4.25em!important;
+    font-size: 4em!important;
     margin-bottom: 0!important;
 }
 
@@ -29,7 +29,7 @@ h2 {
 
 .slogan {
     font-size: 1.6em!important;
-    margin-top: .23em!important;
+    margin-top: 0.055em!important;
     text-align: center;
 }
 
@@ -39,7 +39,7 @@ h2 {
     box-shadow: inset 0px 0px 1px 7px rgba(237,137,54,1);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
     .project-card-list {
         margin-left: -10%!important;
         margin-right: -10%!important;
@@ -59,6 +59,15 @@ h2 {
     .project-card-list { 
         grid-gap: 2rem;
         grid-template-columns: repeat(1,1fr)!important;
+    }
+
+    h2 {
+        margin-top: 500px!important;
+        letter-spacing: .14em;
+    }
+    
+    .contact-title {
+        margin-top: 550px!important;
     }
 }
 
