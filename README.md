@@ -1,13 +1,12 @@
 <h1 align="center">
   Olli Suutari - Portfolio
 </h1>
-<h2 align="center">
-  <a href="https://olli-suutari.fi/">olli-suutari.fi</a>
-</h2>
 
- <br />
+## To visit this website, go to: [olli-suutari.fi](https://olli-suutari.fi/)
 
-<h3>TO DO:</h3>
+
+
+### 📝 TO DO:
 
 - Verify accessibility features
 
@@ -19,16 +18,28 @@
 
 - Add noscript functionality
 
- <br />
-<h3>✨ Features </h3>
+- Update packages
+
+  
+
+### ✨ Features
 
 - Theme UI-based theming
 - react-spring parallax effect
 - CSS Animations on Shapes
 
- <br />
 
-<h4>
-This website is based on "<a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Gatsby Starter Portfolio: Cara</a>" by LekoArts.
-</h4>
+
+### 🚀 How to run it locally?
+
+- npm install
+- gatsby develop (or npm start)
+- visit: http://localhost:8000/
+- For prod build, run gatsby build or (npm build)
+
+
+
+
+
+#### This website is based on "[Gatsby Starter Portfolio: Cara](https://github.com/LekoArts/gatsby-starter-portfolio-cara)" by LekoArts.
 

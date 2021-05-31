@@ -13,7 +13,7 @@ module.exports = {
     siteTitleAlt: `Olli Suutari – Full-stack passion for a better web`,
     siteHeadline: `Olli Suutari – Full-stack passion for a better web`,
     siteUrl: `https://olli-suutari.fi/`,
-    siteDescription: `Welcome to the portfolio of Olli Suutari`,
+    siteDescription: `Welcome to my portfolio!`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: `Olli Suutari`,

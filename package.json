@@ -2,7 +2,7 @@
   "private": true,
   "name": "Olli-Suutari",
   "description": "Portfolio, featuring projects, skillset and goals.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Olli Suutari <suutari.olli@gmail.com>",
   "license": "MIT",
   "starter-name": "gatsby-starter-portfolio-cara",
@@ -21,6 +21,7 @@
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-netlify": "^2.1.6",
     "gatsby-plugin-offline": "^3.0.35",
+    "gatsby-plugin-theme-ui": "^0.3.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
