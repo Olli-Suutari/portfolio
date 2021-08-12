@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Footer as ThemeFooter, Styled, Flex, useColorMode, jsx } from "theme-ui"
+import { Styled, Box, Flex, Link, useColorMode, jsx } from "theme-ui"
 
 let intitialColorModeSet = false;
 const Footer = () => {
@@ -23,9 +23,8 @@ const Footer = () => {
   }
 
   return (
-    <ThemeFooter className="bottom-footer" sx={{ color: 'text_bright', paddingTop: '60px', zInex: 9999999999, width: '100vmin' }} >
+    <Box as="footer" variant="footer" className="bottom-footer" sx={{ color: 'text_bright', paddingTop: '60px', zInex: 9999999999, width: '100vmin' }} >
       <button
-        sx={ {background: 'project_card_bg'} }
         className={isDark ? 'btn-toggle-light' : 'btn-toggle-dark'}
         onClick={toggleColorMode}
         type="button"
@@ -61,7 +60,7 @@ const Footer = () => {
           LekoArts
         </Styled.a>
       </Flex>
-    </ThemeFooter>
+    </Box>
   )
 }
 

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from "react"
+import * as React from "react"
 import { jsx } from "theme-ui"
 
 type ProjectCardProps = {
@@ -18,7 +18,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
     sx={{
       width: `100%`,
       boxShadow: ``,
-      position: ``,
+      //position: ``,
       textDecoration: `none`,
       borderRadius: `13px`,
       px: 4,

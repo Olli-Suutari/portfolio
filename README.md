@@ -18,7 +18,6 @@
 
 - Add noscript functionality
 
-- Update packages
 
   
 

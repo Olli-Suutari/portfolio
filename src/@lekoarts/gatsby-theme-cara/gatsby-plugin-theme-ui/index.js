@@ -1,26 +1,20 @@
+import { merge } from "theme-ui"
 import { tailwind } from "@theme-ui/presets"
-//import "baseTheme" from "@lekoarts/gatsby-theme-cara/src/gatsby-plugin-theme-ui"
-import baseTheme from "@lekoarts/gatsby-theme-cara/src/gatsby-plugin-theme-ui"
-import merge from "lodash.merge"
 
-console.log("FOO BAR")
-
-export default merge({}, baseTheme, {
-
-
-  ...tailwind,
-  initialColorMode: 'dark',
-  useCustomProperties: true,
+const theme = merge(tailwind, {
+  initialColorModeName: `dark`,
+  config: {
+    useCustomProperties: true,
+  },
   colors: {
-    ...tailwind.colors,
     primary: tailwind.colors.orange[4],
     secondary: tailwind.colors.indigo[6],
-    text: tailwind.colors.gray[3],
-    heading: tailwind.colors.white,
-    background: `hotpink`,
-    divider: 'hotpink',
+    text: tailwind.colors.gray[9],
+    text_bright: tailwind.colors.gray[3],
+    heading: tailwind.colors.gray[10],
+    heading_bright: tailwind.colors.gray[2],
+    divider: tailwind.colors.gray[8],
     textMuted: tailwind.colors.gray[5],
-    icon_brighter: 'hotpink',
     icon_brightest: tailwind.colors.white,
     icon_darker: tailwind.colors.gray[7],
     icon_darkest: tailwind.colors.gray[8],
@@ -31,18 +25,31 @@ export default merge({}, baseTheme, {
     icon_pink: tailwind.colors.pink[5],
     icon_purple: tailwind.colors.purple[6],
     icon_green: tailwind.colors.green[5],
+    projectsBg: tailwind.colors.indigo[6],
+    project_card_bg: tailwind.colors.gray[7],
+    aboutBg: tailwind.colors.teal[5],
+    contactBg: tailwind.colors.blue[6],
+    footerBg: tailwind.colors.orange[7],
+    dark_mode_toggle: tailwind.colors.gray[10],
     modes: {
       light: {
         text: tailwind.colors.gray[8],
+        text_bright: tailwind.colors.gray[7],
         heading: tailwind.colors.black,
-        primary: tailwind.colors.orange[7],
-        background: tailwind.colors.gray[1],
-        divider: tailwind.colors.gray[2],
+        heading_bright: tailwind.colors.gray[8],
+        primary: '#ffe066',
+        background: tailwind.colors.gray[2],
+        divider: tailwind.colors.gray[3],
         textMuted: tailwind.colors.gray[6],
-        icon_brighter: tailwind.colors.gray[6],
         icon_brightest: tailwind.colors.gray[2],
         icon_darker: tailwind.colors.gray[4],
         icon_darkest: tailwind.colors.gray[6],
+        projectsBg: tailwind.colors.yellow[2],
+        project_card_bg: tailwind.colors.teal[2],
+        aboutBg: tailwind.colors.indigo[3],
+        contactBg: tailwind.colors.blue[3],
+        footerBg: tailwind.colors.gray[3],
+        dark_mode_toggle: tailwind.colors.yellow[6],
       },
     },
   },
@@ -113,7 +120,6 @@ export default merge({}, baseTheme, {
       color: `text`,
     },
     blockquote: {
-      marginLeft: 0,
       p: {
         fontSize: [2, 3],
         fontWeight: `medium`,
@@ -177,4 +183,6 @@ export default merge({}, baseTheme, {
       },
     },
   },
-}
+})
+
+export default theme
