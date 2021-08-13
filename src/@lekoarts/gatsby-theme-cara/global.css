@@ -11,16 +11,16 @@ h1, h2, h3 {
     font-style: oblique;
 }
 
-.hero-container {
-    margin-top: 15%;
-}
-
 h1 {
     letter-spacing: .085em!important;
     text-align: center;
-    font-size: 4em!important;
     margin-bottom: 0!important;
-    margin-top: -15vmax!important;
+}
+
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 4rem!important;
+    }
 }
 
 h2 {

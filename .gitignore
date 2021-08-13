@@ -63,6 +63,7 @@ typings/
 .cache
 **/.cache
 public
+!public/Olli_Suutari_cv.pdf
 
 .idea
 .vscode
